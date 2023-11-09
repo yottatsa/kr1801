@@ -7,7 +7,7 @@ KiCAD goodies to work with K1801VM1
 
 ## К1801ВМ1 (K1801VM1)
 
-KiCAD symbol and footprint.
+KiCAD symbol and footprint, 3D model.
 
 ![Screenshot of a K1801VM1 KiCAD symbol](https://yottatsa.github.io/kr1801/k1801vm1.png)
 
