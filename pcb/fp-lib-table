@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "GOST_17467-89")(type "KiCad")(uri "${KIPRJMOD}/GOST_17467-89.pretty")(options "")(descr ""))
+)
