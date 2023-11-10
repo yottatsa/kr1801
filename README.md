@@ -19,3 +19,8 @@ KiCAD symbol with most of the pins in 16bit configuration (to be finished).
 ## KR1801VM1 ECB card
 
 Minimal card that has clock and facilities to boot.
+
+## Documentation sources
+
+* [1801BM1/cpu11](https://github.com/1801BM1/cpu11/tree/6452c7d89c5c2e69dccbcec1f96eda947a3de05e/vm1/doc)
+* [arktur04/1801VM1_docs](https://github.com/arktur04/1801VM1_docs)
