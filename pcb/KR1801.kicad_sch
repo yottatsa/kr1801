@@ -2001,7 +2001,7 @@
     (property "Value" "ECB" (at 39.37 35.56 0) (do_not_autoplace)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_DIN:DIN41612_R_3x32_Male_Horizontal_THT" (at 40.64 17.78 0)
+    (property "Footprint" "Connector_DIN:DIN41612_C_3x32_Male_Horizontal_THT" (at 40.64 17.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.retrobrewcomputers.org/lib/exe/detail.php?id=boards:ecb:ecbbusinfo&media=boards:ecb:ecb-06.jpg" (at 40.64 20.32 0)

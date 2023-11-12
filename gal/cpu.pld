@@ -1,0 +1,24 @@
+GAL16V8    ;
+cpu        ;
+
+
+Clock	DIN	DOUT	SEL1	SEL2	RESET	NMIBTN	BEN	NC	GND
+/OE	NC      NC	FAILLED	NMILED	NMI	DEN	REG	LED	VCC
+
+NMI.R    = NMI * RESET + /NMI * /NMIBTN
+FAILLED  = /RESET
+NMILED   = /NMI
+
+LED      = SEL1 * DOUT
+REG	 = SEL1 * DIN
+DEN	 = BEN + /REG
+
+DESCRIPTION
+
+RESET is connected to SV, button, /RESET on ECB and /DCLO on CPU, and to FAILLED
+NMI is connected to /NMI on ECB and /ACLO on CPU, and to NMILED
+/NMI is set to active low by toggling /RESET active low, and re-set by toggling NMIBTN active low
+
+LED is latching data to indicators
+REG is driving data from switches
+DEN is the same as BEN except reading from REG to avoid clashes

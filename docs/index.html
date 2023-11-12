@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<title>KR1801 computer</title>
+	<p>Code is available on <a href="https://github.com/yottatsa/kr1801">github.com/yottatsa/kr1801</a> and for <a href="https://github.com/yottatsa/kr1801/archive/refs/heads/main.zip">direct download</a>.</p>
+
 	<h1>K1801VM1 to ECB considerations</h1>
 	<p>K1801VM1 is a clone of PDP-11 CPU board that uses <a href="https://en.wikipedia.org/wiki/Q-Bus">Q-bus, also known as LSI-11 Bus</a>. It uses multiplexed A/D bus, and the bus is mastered by the processor card.</p> 
 	<p><a href="https://www.retrobrewcomputers.org/doku.php?id=boards:ecb:start">RetroBrew EuroCard Bus</a> is more-or-less versatile 16-bit demultiplexed parallel bus with existing peripheals and reliable <a href="https://en.wikipedia.org/wiki/DIN_41612">DIN 41612</a> connector.</p>
@@ -9,7 +11,7 @@
 	<h1>K1801VM1 bootstrap</h1>
 	<p>Few actions are needed to boot the processor after the power on or manual reset (pulling down <code>RESET</code> line):</p>
 	<ol>
-		<li><code>RESET</code> line is wired to <code>DCLO</code> signal and therefore it goes releases to inactive high</li>
+		<li><code>RESET</code> line is wired to <code>DCLO</code> signal and therefore it releases to inactive high</li>
 		<li>processor releases <code>INIT</code> signal, which is wired to <code>RESOUT</code></li>
 		<li>together with releasing <code>RESET</code>, GAL asserts <code>NMI</code> to active low, this line is connected to <code>ACLO</code> and need to be deasserted to start the processor</li>
 		<li>operator indication NMI LED is turned on</li>
