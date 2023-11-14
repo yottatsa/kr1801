@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "K1801")(type "KiCad")(uri "${KIPRJMOD}/K1801.kicad_sym")(options "")(descr ""))
   (lib (name "ECB")(type "KiCad")(uri "${KIPRJMOD}/ECB.kicad_sym")(options "")(descr ""))
+  (lib (name "74xx_EXTRA")(type "KiCad")(uri "${KIPRJMOD}/74xx_EXTRA.kicad_sym")(options "")(descr ""))
 )
